@@ -1,0 +1,14 @@
+.faq-p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27.5px;
+    width: 350px;
+    margin-bottom: 12%;
+}
+
+.faq-p>span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}

@@ -1,0 +1,54 @@
+.getlinked-text {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.participate {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29.26px;
+    width: 65%;
+}
+
+.registerbtn {
+    background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: 172px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    align-items: center;
+    margin-left: 8%;
+}
+
+.time {
+
+font-family: 'Unica One', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 29.26px;
+    width: 65%;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.time>span {
+    font-size: 14px;
+    line-height: 18.62px;
+}
+
+.ignite {
+    font-family: 'Montserrat', sans-serif;
+font-size: 36px;
+font-style: italic;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 0em;
+text-align: left;
+
+}

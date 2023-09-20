@@ -1,0 +1,21 @@
+.intro {
+    margin-left: 8%;
+}
+
+.intro-text {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.intro-p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27.5px;
+    width: 510px;
+    margin-top: 20px;
+
+}

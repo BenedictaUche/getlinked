@@ -1,0 +1,16 @@
+.timeline-h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-family: 'Clash Display', serif;
+}
+
+.timeline-p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-family: 'Montserrat', serif;
+
+}

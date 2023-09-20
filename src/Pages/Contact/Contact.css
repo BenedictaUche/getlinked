@@ -1,0 +1,26 @@
+.contact {
+    overflow: hidden;
+    color: #fff;
+}
+
+.h2 {
+    font-family: "Clash Display", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39.36px;
+    color: #d434fe;
+}
+
+.contact-info ul {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    size: 16px;
+    line-height: 19.5px;
+}
+
+.share {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    size: 16px;
+    line-height: 19.5px;
+}

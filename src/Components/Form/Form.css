@@ -1,0 +1,17 @@
+.form-btn {
+  background: linear-gradient(270deg, #903aff 0%, #fe34b9 100%);
+}
+
+.form-cont h2 {
+  font-family: "Clash Display", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24.6px;
+  color: #d434fe;
+}
+
+.form-cont {
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+}

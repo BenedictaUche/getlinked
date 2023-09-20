@@ -1,0 +1,23 @@
+.judging-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 510px;
+
+}
+
+.judging-ul span {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.judging-ul li {
+    font-size: 14px;
+    line-height: 27.76px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
