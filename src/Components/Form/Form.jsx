@@ -37,7 +37,7 @@ export default function Form() {
           Let us know about it!
         </h2>
         <div className="mt-10">
-          <FormControl className="flex flex-col justify-center align-middle items-center gap-8">
+          <FormControl className="flex flex-col justify-center align-middle items-center gap-8" isRequired>
             <Input
               type="text"
               name="firstName"

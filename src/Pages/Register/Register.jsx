@@ -1,16 +1,17 @@
 import React from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import RegisterForm from '../../Components/Register-form/RegisterForm'
+import './Register.css'
 
 export default function Register() {
   return (
     <>
         <Navbar />
-        <div className='flex justify-between'>
-            <div>
-                <img src="./images/3d-graphic-designer.png" alt="man wearing smart glasses" />
+        <div className='flex justify-between mr-20'>
+            <div className='register-images'>
+                <img src="./images/3d-graphic-designer.png" alt="man wearing smart glasses" style={{width: '717px', height: '717px'}} />
             </div>
-            <div>
+            <div className='my-14 mb-20'>
                 <RegisterForm />
             </div>
         </div>

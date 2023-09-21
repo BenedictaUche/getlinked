@@ -1,0 +1,17 @@
+
+
+.register-containers {
+    display: flex;
+    justify-content: space-between; /* Equal spacing between image and form */
+    align-items: center; /* Vertically center align items */
+  }
+
+  .register-images {
+    flex: 1; /* Take up 1/2 of the available space */
+    padding: 20px; /* Adjust as needed for spacing */
+  }
+
+  .register-forms {
+    flex: 1; /* Take up 1/2 of the available space */
+    padding: 20px; /* Adjust as needed for spacing */
+  }
