@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import "./Header.css";
 
@@ -40,7 +41,7 @@ export default function Header() {
             Participate in getlinked tech Hackathon 2023 stand a chance to win a
             Big prize
           </p>
-          <button className="registerbtn">Register</button>
+          <Link to='/register'><button className="registerbtn">Register</button></Link>
           <div className="mt-10">
             <p className="time">
               00<span>H</span> 00<span>M</span>00<span>S</span>

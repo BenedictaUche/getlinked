@@ -1,18 +1,14 @@
 import React, { useState } from "react";
-import {
-  FormControl,
-  Input,
-  Textarea,
-  Button
-} from "@chakra-ui/react";
+import { FormControl, Input, Textarea, Button, useToast } from "@chakra-ui/react";
 import "./Form.css";
 
 export default function Form() {
   const [formData, setFormData] = useState({
-    firstName: "",
+    first_name: "",
     email: "",
     message: "",
   });
+  const toast = useToast();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -22,10 +18,34 @@ export default function Form() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Data:", formData);
+    try {
+      const baseUrl = "https://backend.getlinked.ai";
+      const response = await fetch(`${baseUrl}/hackathon/contact-form`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (!response.ok) {
+        throw new Error('Something went wrong');
+      }
 
+      const responseData = await response.json();
+      console.log("Response from API:", responseData);
+      toast({
+        title: "Form submitted successfully",
+        description: "We will get back to you soon.",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+      });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+    console.log("Form Data:", formData);
   };
 
   return (
@@ -37,11 +57,14 @@ export default function Form() {
           Let us know about it!
         </h2>
         <div className="mt-10">
-          <FormControl className="flex flex-col justify-center align-middle items-center gap-8" isRequired>
+          <FormControl
+            className="flex flex-col justify-center align-middle items-center gap-8"
+            isRequired
+          >
             <Input
               type="text"
-              name="firstName"
-              value={formData.firstName}
+              name="first_name"
+              value={formData.first_name}
               onChange={handleInputChange}
               placeholder="First Name"
             />
