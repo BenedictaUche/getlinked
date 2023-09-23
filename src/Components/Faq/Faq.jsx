@@ -52,7 +52,7 @@ export default function Faq() {
 
   return (
     <>
-    <div className="flex flex-col-reverse md:mt-10 md:flex-row  intro justify-center align-middle items-center">
+    <div className="flex flex-col md:mt-10 md:flex-row  intro justify-center align-middle items-center">
       <div className="text-white">
         <h2 className="rules-text">
           Frequently Asked <span className="text-[#D434FE]">Questions</span>
@@ -61,7 +61,7 @@ export default function Faq() {
           We got answers to the questions that you might want to ask about
           <span> getlinked Hackathon 1.0</span>
         </p>
-        <Accordion allowMultiple>
+        <Accordion className="accord" allowMultiple>
           {data.map((item) => (
             <AccordionItem key={item.id}>
               {({ isExpanded }) => (
@@ -86,7 +86,7 @@ export default function Faq() {
         </Accordion>
       </div>
 
-      <div>
+      <div className='faq-img'>
         <img
           src="./images/man_thinking.png"
           alt="man thinking"
