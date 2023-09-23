@@ -11,17 +11,11 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div className={`logo  flex justify-between items-center px-10 pt-14 pb-5 text-white ${menuOpen ? 'menu-open' : ''}`}>
-        <div className="logo-img">
+      <div className={`navbar flex justify-between items-center px-10 py-5 text-white`}>
+        <div className="logo">
           <img src="./images/getlinked.svg" alt="getlinked" />
-          <img
-          src="./images/menu.svg"
-          alt="menu icon"
-          className="menu-icon display-none cursor-pointer"
-          onClick={toggleMenu}
-        />
         </div>
-        <div className={`menu-text flex items-center gap-12 ${menuOpen ? 'slide-in': '' }`}>
+        <div className="menu" style={{display: `${menuOpen ? 'flex' : 'none'}`}}>
           <ul className={`flex gap-4 ${menuOpen ? 'menu-open' : ''}`}>
             <li><NavLink to="/" activeClassName="active-link">Home</NavLink></li>
             <li><NavLink to="/timeline" activeClassName="active-link">Timeline</NavLink></li>
@@ -33,8 +27,9 @@ export default function Navbar() {
             <button className="register-btn">Register</button>
           </NavLink>
         </div>
-
-
+        <div className="menu-icon cursor-pointer" onClick={toggleMenu}>
+          <img src="./images/menu.svg" alt="menu icon" />
+        </div>
       </div>
     </nav>
   );

@@ -38,3 +38,15 @@
     width: 40px;
     height: 40px;
 }
+
+@media(max-width: 768px) {
+    .timeline-content {
+        width: 100%;
+    }
+    .timeline-content p{
+      text-align: start;
+    }
+    .timeline-content h3 {
+      text-align: start;
+    }
+}

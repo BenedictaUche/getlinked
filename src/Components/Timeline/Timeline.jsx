@@ -55,17 +55,17 @@ export default function Timeline() {
         <div>
           {data.map((item) => {
               return (
-                <div key={item.id} className="timeline-div flex justify-between py-10 flex-col md:flex-row">
+                <div key={item.id} className="timeline-div relative flex justify-normal md:justify-between py-10 flex-col md:flex-row">
 
-                  <div className="timeline-content flex flex-col items-end  w-[500px]">
-                    <h3 className="text-[#D434FE text-right">{item.title}</h3>
-                    <p className="items-start">{item.description}</p>
+                  <div className="timeline-content flex flex-col absolute left-0 md:relative justify-end md:justify-start items-end w-full md:w-[500px]">
+                    <h3 className="text-[#D434FE] text-left md:text-right">{item.title}</h3>
+                    <p className="items-start w-[400px] md:w-full">{item.description}</p>
                   </div>
                   <div>
                     <div className="flex justify-start md:justify-center items-center align-middle mb-4"><img src='./images/vertical.svg' alt='line' /></div>
                     <div className="rectangle-div flex justify-center align-middle items-center">{item.id}</div>
                   </div>
-                  <div className="timeline-date">
+                  <div className="timeline-date flex absolute md:relative bottom-24 md:left-0 left-[25%] justify-start">
                     <p className="text-[#D434FE]">{item.date}</p>
                   </div>
                 </div>

@@ -37,6 +37,58 @@
     display: none;
 }
 
+/* Your existing styles for .register-btn and other elements can remain as they are */
+
+/* Add these styles for the navbar */
+.navbar {
+  background-color: #333; /* Change this to your desired background color */
+  height: 80px; /* Adjust the height as needed */
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px; /* Adjust the spacing between menu items */
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .menu {
+
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 @media (max-width: 768px) {
     .logo{
         flex-direction: column;
@@ -69,8 +121,5 @@
     }
 
 
-    .logo-text ul {
-      flex-direction: column;
-      align-items: center;
-    }
+
   }
