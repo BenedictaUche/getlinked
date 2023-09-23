@@ -50,3 +50,32 @@
     transition: all 0.3s ease-in-out;
   }
 }
+
+@media(max-width: 920px) {
+  .prizes_and_awards {
+    margin: 0 10%;
+    display: block;
+  }
+  .prizes_and_awards h2 {
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+  }
+  .prizes_and_awards p {
+    width: 100%;
+    text-align: center;
+  }
+  .prizes_and_awards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .prize-imgs {
+    flex-direction: column;
+  }
+}

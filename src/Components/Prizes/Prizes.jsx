@@ -16,7 +16,7 @@ export default function Prizes() {
             participants.
           </p>
         </div>
-        <div className="prize-imgs flex flex-col md:flex-row justify-between px-10 py-18">
+        <div className="prize-imgs flex justify-between px-10 py-18">
           <img src="./images/cup.png" alt="an awards cup" className="" />
           <img
             src="./images/Rewards.svg"
