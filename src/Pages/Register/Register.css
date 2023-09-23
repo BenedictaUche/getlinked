@@ -2,16 +2,48 @@
 
 .register-containers {
     display: flex;
-    justify-content: space-between; /* Equal spacing between image and form */
-    align-items: center; /* Vertically center align items */
+    justify-content: space-between;
+    align-items: center;
   }
 
   .register-images {
-    flex: 1; /* Take up 1/2 of the available space */
-    padding: 20px; /* Adjust as needed for spacing */
+    flex: 1;
+    padding: 20px;
   }
 
   .register-forms {
-    flex: 1; /* Take up 1/2 of the available space */
-    padding: 20px; /* Adjust as needed for spacing */
+    flex: 1;
+    padding: 20px;
+  }
+
+  .registerforms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  @media (max-width: 768px) {
+    .register-containers {
+      flex-direction: column;
+    }
+
+
+    .register-images img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      margin: 0 auto;
+      display: block;
+      transition: all 0.3s ease-in-out;
+    }
+    .register-forms {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
   }

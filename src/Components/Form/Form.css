@@ -1,6 +1,15 @@
 .form-btn {
-  background: linear-gradient(270deg, #903aff 0%, #fe34b9 100%);
+  background: #903aff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #fff;
+  width: 10rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
+
+
 
 .form-cont h2 {
   font-family: "Clash Display", sans-serif;
@@ -20,6 +29,20 @@
   .form-cont {
     width: 100%;
     padding: 0;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 920px){
+  .form-cont {
+    width: 100%;
+    padding: 0;
+    margin: 0;
     border-radius: 0;
     box-shadow: none;
     display: flex;

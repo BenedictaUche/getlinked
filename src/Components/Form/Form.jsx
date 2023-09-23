@@ -83,7 +83,7 @@ export default function Form() {
               placeholder="Message"
               size="lg"
             />
-            <Button type="submit" className="form-btn register-btn">
+            <Button type="submit" className="form-btn register-btn" style={{background: 'linear-gradient(270deg, #903aff 0%, #fe34b9 100%)'}}>
               Submit
             </Button>
           </FormControl>
