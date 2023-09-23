@@ -7,11 +7,11 @@ export default function Register() {
   return (
     <>
         <Navbar />
-        <div className='flex flex-col md:flex-row justify-between mr-20'>
+        <div className='register-conts flex flex-col md:flex-row justify-between mr-0 md:mr-20'>
             <div className='register-images'>
                 <img src="./images/3d-graphic-designer.png" alt="man wearing smart glasses" style={{width: '717px', height: '717px'}} />
             </div>
-            <div className='my-14 mb-20 registerforms'>
+            <div className='my-14 mb-20 register_forms'>
                 <RegisterForm />
             </div>
         </div>

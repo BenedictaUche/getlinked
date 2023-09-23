@@ -53,6 +53,7 @@
   align-items: center;
 }
 
+
 @media (max-width: 768px) {
   .register-container {
     width: 100%;
@@ -64,5 +65,29 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
+
+  .register-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .registerform-btn {
+    width: 10rem;
+
+  }
+  .register-btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .register-cont-try form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }

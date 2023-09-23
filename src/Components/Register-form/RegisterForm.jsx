@@ -157,10 +157,10 @@ export default function RegisterForm() {
   return (
     <>
       <div className="container register-container w-[100%] text-white">
-        <h2 className="registerf py-6 text-[#D434FE]">Register</h2>
+        <h2 className="registerf py-6 text-[#D434FE] absolute  top-0">Register</h2>
         <p className="part">Be part of this movement</p>
         <p className="create pt-4">CREATE YOUR ACCOUNT</p>
-        <Stack>
+        <div className="register-cont-try">
           <form onSubmit={handleSubmit}>
             <Stack direction="row" spacing={8} className="py-4">
               <Stack>
@@ -250,6 +250,7 @@ export default function RegisterForm() {
           >
             I agreed with the event terms and conditions and privacy policy
           </Checkbox>
+          <div className="register-btn-div">
           <Button
             type="submit"
             className="registerform-btn"
@@ -263,7 +264,8 @@ export default function RegisterForm() {
           >
             Register Now
           </Button>
-        </Stack>
+          </div>
+        </div>
       </div>
     </>
   );
