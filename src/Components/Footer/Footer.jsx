@@ -20,7 +20,7 @@ export default function Footer() {
               alt="getlinked logo"
               className="mt-10 w-40"
             />
-            <p className="w-[25rem]">
+            <p className="md:w-[25rem] w-full">
               Getlinked Tech Hackathon is a technology innovation program
               established by a group of organizations with the aim of showcasing
               young and talented individuals in the field of technology

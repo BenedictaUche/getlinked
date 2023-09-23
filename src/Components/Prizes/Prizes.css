@@ -51,7 +51,7 @@
   }
 }
 
-@media(max-width: 920px) {
+@media(max-width: 1024px) {
   .prizes_and_awards {
     margin: 0 10%;
     display: block;
