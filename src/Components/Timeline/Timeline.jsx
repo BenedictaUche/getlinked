@@ -6,26 +6,29 @@ export default function Timeline() {
     {
       id: 1,
       title: "Hackathon Announcement",
-      description:
-        "The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register",
+      description: "The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register",
+      image: "./images/rectangle1.svg",
       date: "November 18, 2023",
     },
     {
       id: 2,
       title: "Teams Registration begins",
       description: "Interested teams can now show their interest in the getlinked tech hackathon 1.0 2023 by proceeding to register",
+      image: "./images/rectangle2.svg",
       date: "November 18, 2023",
     },
     {
       id: 3,
       title: "Teams Registration ends",
       description: "Interested Participants are no longer allowed to register",
+      image: "./images/rectangle3.svg",
       date: "November 18, 2023",
     },
     {
       id: 4,
       title: "Announcement of the accepted teams and ideas",
       description: "All teams whom idea has been accepted into getlinked tech hackathon 1.0 2023 are formally announced",
+      image: "./images/rectangle4.svg",
       date: "November 18, 2023",
     },
     {
@@ -43,7 +46,7 @@ export default function Timeline() {
   ];
   return (
     <>
-      <div className="text-white">
+      <div className="text-white mx-[10%] mt-8">
         <h2 className="timeline-h2 text-center">Timeline</h2>
         <p className="timeline-p text-center">
           Here is the breakdown of the time we anticipate <br />
@@ -51,17 +54,37 @@ export default function Timeline() {
         </p>
         <div>
           {data.map((item) => {
-            return (
-              <div key={item.id} className="timeline-div">
-                <div className="timeline-date">
-                  <p>{item.date}</p>
+            if (window.innerWidth > 768) {
+              return (
+                <div key={item.id} className="timeline-div flex justify-between py-10 flex-col md:flex-row">
+
+                  <div className="timeline-content flex flex-col items-end  w-[500px]">
+                    <h3 className="text-[#D434FE text-right">{item.title}</h3>
+                    <p className="items-start">{item.description}</p>
+                  </div>
+                  <div>
+                    <div className="flex justify-center items-center align-middle mb-4"><img src='./images/vertical.svg' alt='line' /></div>
+                    <div className="rectangle-div flex justify-center align-middle items-center">{item.id}</div>
+                  </div>
+                  <div className="timeline-date">
+                    <p className="text-[#D434FE]">{item.date}</p>
+                  </div>
                 </div>
-                <div className="timeline-content">
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
+              );
+            } else {
+              return (
+                <div key={item.id} className="timeline-div">
+
+                  <div className="timeline-content">
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                  </div>
+                  <div className="timeline-date">
+                    <p>{item.date}</p>
+                  </div>
                 </div>
-              </div>
-            );
+              );
+            }
           })}
           {/* <ul>
             <li>

@@ -1,16 +1,40 @@
 .timeline-h2 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #fff;
-    font-family: 'Clash Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-family: "Clash Display", serif;
 }
 
 .timeline-p {
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    color: #fff;
-    font-family: 'Montserrat', serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-family: "Montserrat", serif;
+}
 
+.timeline-content h3 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.timeline-content p {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.rectangle-div {
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
 }
