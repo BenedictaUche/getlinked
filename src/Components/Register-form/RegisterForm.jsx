@@ -162,7 +162,7 @@ export default function RegisterForm() {
         <p className="create pt-4">CREATE YOUR ACCOUNT</p>
         <div className="register-cont-try">
           <form onSubmit={handleSubmit}>
-            <Stack direction="row" spacing={8} className="py-4">
+            <div className="py-4 flex gap-8 flex-col md:flex-row w-full">
               <Stack>
                 <FormLabel>Team's Name</FormLabel>
                 <Input
@@ -184,9 +184,9 @@ export default function RegisterForm() {
                   isInvalid={validatePhone(formData.phone_number)}
                 />
               </Stack>
-            </Stack>
+            </div>
 
-            <Stack direction="row" spacing={8} className="py-4">
+            <div className="py-4 flex gap-8 flex-col md:flex-row w-full">
               <Stack>
                 <FormLabel>Email</FormLabel>
                 <Input
@@ -207,10 +207,10 @@ export default function RegisterForm() {
                   placeholder="What is your group project topic?"
                 />
               </Stack>
-            </Stack>
+            </div>
 
-            <Stack direction="row" spacing={8} className="py-4">
-              <Stack className="w-[13.5rem]">
+            <div className="py-4 flex gap-8 w-full">
+              <Stack className="w-full md:w-[13.5rem]">
                 <FormLabel>Category</FormLabel>
                 <Select
                   placeholder="Select your category"
@@ -236,7 +236,7 @@ export default function RegisterForm() {
                   <option value="5-10">5-10</option>
                 </Select>
               </Stack>
-            </Stack>
+            </div>
 
             <p className="text-[#FF26B9] py-5 please">
               Please review your registration details before submitting
