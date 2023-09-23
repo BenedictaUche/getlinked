@@ -54,7 +54,6 @@ export default function Timeline() {
         </p>
         <div>
           {data.map((item) => {
-            if (window.innerWidth > 768) {
               return (
                 <div key={item.id} className="timeline-div flex justify-between py-10 flex-col md:flex-row">
 
@@ -63,7 +62,7 @@ export default function Timeline() {
                     <p className="items-start">{item.description}</p>
                   </div>
                   <div>
-                    <div className="flex justify-center items-center align-middle mb-4"><img src='./images/vertical.svg' alt='line' /></div>
+                    <div className="flex justify-start md:justify-center items-center align-middle mb-4"><img src='./images/vertical.svg' alt='line' /></div>
                     <div className="rectangle-div flex justify-center align-middle items-center">{item.id}</div>
                   </div>
                   <div className="timeline-date">
@@ -71,20 +70,6 @@ export default function Timeline() {
                   </div>
                 </div>
               );
-            } else {
-              return (
-                <div key={item.id} className="timeline-div">
-
-                  <div className="timeline-content">
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
-                  </div>
-                  <div className="timeline-date">
-                    <p>{item.date}</p>
-                  </div>
-                </div>
-              );
-            }
           })}
           {/* <ul>
             <li>
