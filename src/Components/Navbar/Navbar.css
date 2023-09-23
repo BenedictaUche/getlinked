@@ -32,9 +32,7 @@
   -webkit-background-clip: text;
   color: transparent;
 }
-.menu-icon {
-  display: none;
-}
+
 
 .navbar {
   background-color: transparent;
@@ -54,7 +52,7 @@
 }
 
 .menu li {
-  margin-right: 20px; /* Adjust the spacing between menu items */
+  margin-right: 20px;
 }
 
 .menu-icon {

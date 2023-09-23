@@ -15,7 +15,7 @@ export default function Navbar() {
         <div className="logo">
           <img src="./images/getlinked.svg" alt="getlinked" />
         </div>
-        <div className="menu" style={{display: `${menuOpen ? 'flex' : 'none'}`}}>
+        <div className="menu" style={{display: `${menuOpen ? 'none' : 'flex'}`}}>
           <ul className={`flex gap-4 ${menuOpen ? 'menu-open' : ''}`}>
             <li><NavLink to="/" activeClassName="active-link">Home</NavLink></li>
             <li><NavLink to="/timeline" activeClassName="active-link">Timeline</NavLink></li>
