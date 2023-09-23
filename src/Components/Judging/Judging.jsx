@@ -4,12 +4,12 @@ import './Judging.css'
 export default function Judging() {
   return (
     <>
-      <div className="flex intro justify-between align-middle items-center">
+      <div className="flex intro flex-col mt-5 md:mt-10 md:flex-row justify-between align-middle items-center">
         <div>
           <img src="./images/woman_with_bar.png" alt="judging" className="w-[600px] h-[550px]" />
         </div>
 
-        <div className="text-white mb-8">
+        <div className="text-white mb-8 text-center md:text-left">
           <h2 className="rules-text">
             Judging Criteria <span className="text-[#D434FE]">Key attributes</span>
           </h2>

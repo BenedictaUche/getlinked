@@ -4,12 +4,14 @@
     padding: 10px 20px;
     width: 100%;
     height: 100%;
+    color: white;
 }
 
 .register-btn:hover {
     background: transparent;
     border: 2px solid #903AFF;
 }
+
 
 .logo-text  ul li {
     font-family: 'Montserrat', sans-serif;
@@ -24,3 +26,51 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+
+.active {
+    background-image: linear-gradient(270deg, #903AFF, #FE34B9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .logo{
+        flex-direction: column;
+    }
+
+    /* .logo-text {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      transition: transform 0.3s ease-in-out;
+      transform: translateY(-100%);
+    }
+
+    .menu-open .logo-text {
+      transform: translateY(0);
+    }
+    */
+    .menu-icon {
+      display: block;
+    }
+
+    .logo-text {
+        flex-direction: column;
+
+    }
+
+
+    .logo-text ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

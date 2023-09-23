@@ -17,5 +17,21 @@
     line-height: 27.5px;
     width: 510px;
     margin-top: 20px;
+}
 
+@media (max-width: 768px) {
+    .intro {
+        margin-left: 0;
+        margin: 0 10%;
+        display: block;
+    }
+
+    .intro-text {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .intro-p {
+        width: 100%;
+    }
 }

@@ -4,7 +4,7 @@ import "./Rules.css";
 export default function Rules() {
   return (
     <>
-      <div className="intro flex justify-center align-middle items-center text-white">
+      <div className="intro flex flex-col-reverse md:flex-row justify-center align-middle items-center text-white">
         <div>
           <h2 className="rules-text">Rules and <span className="text-[#D434FE]">Guidelines</span></h2>
           <p className="rules-p">

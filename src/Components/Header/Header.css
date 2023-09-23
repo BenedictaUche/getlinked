@@ -1,54 +1,91 @@
 .getlinked-text {
-    font-family: 'Clash Display', sans-serif;
-    font-weight: 700;
-    font-size: 80px;
+  font-family: "Clash Display", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
 }
-
+.ignite {
+    font-size: 36px;
+}
 .participate {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 29.26px;
-    width: 65%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29.26px;
+  width: 65%;
 }
 
 .registerbtn {
-    background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
-    padding: 10px 20px;
-    border-radius: 4px;
-    width: 172px;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(270deg, #903aff 0%, #fe34b9 100%);
+  padding: 10px 20px;
+  border-radius: 4px;
+  width: 172px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header {
+  align-items: center;
+  margin-left: 8%;
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-left: 0;
+    margin: 0 10%;
+    display: block;
+  }
+  .participate {
+    width: 100%;
+    font-size: 13px;
+  }
+  .time {
+    width: 100%;
+  }
+  .ignite{
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+  }
+  .boy-img {
+    margin-top: 6%;
+  }
+  .time-div {
+    display: flex;
+    justify-content: center;
+  }
+  .igniting {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-left: 8%;
+  }
+  .ignite-txt {
+    display: flex;
+    justify-content: center;
+
+  }
 }
 
 .time {
-
-font-family: 'Unica One', cursive;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 29.26px;
-    width: 65%;
-    margin-top: 20px;
-    color: #fff;
+  font-family: "Unica One", cursive;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 29.26px;
+  width: 65%;
+  margin-top: 20px;
+  color: #fff;
 }
 
-.time>span {
-    font-size: 14px;
-    line-height: 18.62px;
+.time > span {
+  font-size: 14px;
+  line-height: 18.62px;
 }
 
 .ignite {
-    font-family: 'Montserrat', sans-serif;
-font-size: 36px;
-font-style: italic;
-font-weight: 700;
-line-height: 44px;
-letter-spacing: 0em;
-text-align: left;
-
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
 }
