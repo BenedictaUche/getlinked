@@ -5,7 +5,7 @@ import "./Privacy.css";
 export default function Privacy() {
   return (
     <>
-      <div className="privacy-container container justify-between flex flex-col md:flex-row text-white py-16 pl-20">
+      <div className="privacy-container container justify-between flex flex-col md:flex-row text-white py-16 md:px-0 px-10 md:pl-20">
         <div className="">
           <div>
             <h2 className="">
@@ -17,7 +17,7 @@ export default function Privacy() {
               It's our aim to always take of our participant
             </p>
           </div>
-          <div className="privacy-border border-2 p-10 border-[]">
+          <div className="privacy-border border-2 p-10">
             <Text className="priv-text">
               At getlinked tech Hackathon 1.0, we value your privacy and are
               committed to protecting your personal information. This Privacy

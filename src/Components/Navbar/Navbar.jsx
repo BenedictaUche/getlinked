@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <nav className='relative'>
-      <div className={`navbar flex justify-between items-center px-10 absolute md:relative right-0 py-5 text-white`}>
+      <div className= 'navbar flex justify-between items-center px-10 absolute md:relative right-0 py-5 text-white'>
         <div className="logo">
           <img src="./images/getlinked.svg" alt="getlinked" />
         </div>

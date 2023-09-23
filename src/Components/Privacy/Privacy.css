@@ -44,3 +44,30 @@
     height: 700px;
     z-index: 1;
 }
+
+@media (max-width: 768px){
+  .privacy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .privacy-container h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .updated,.below {
+    width: 100%;
+    text-align: center;
+  }
+  .priv-text {
+    width: 100%;
+    text-align: center;
+  }
+  .privacy-border {
+    width: 100%;
+  }
+}
