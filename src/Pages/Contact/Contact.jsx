@@ -8,9 +8,9 @@ export default function Contact() {
   return (
     <>
       <Navbar />
-      <div className="contact mx-40 flex justify-between my-14">
+      <div className="contact mx-40 flex flex-col-reverse md:flex-row justify-between my-14">
         <div className="">
-          <h2 className="text-[#D434FE] h2">Get in Touch</h2>
+          <h2 className="contact-txt text-[#D434FE] h2">Get in Touch</h2>
 
           <div className="contact-info">
             <ul className="flex flex-col gap-6 mt-8">

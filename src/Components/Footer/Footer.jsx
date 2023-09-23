@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <>
       <div className="footer flex justify-center flex-col text-white">
-        <div className="flex justify-between">
+        <div className="flex flex-col md:flex-row justify-between">
           <div className="footer-div flex flex-col gap-4">
             <img
               src="./images/getlinked.svg"
@@ -43,7 +43,7 @@ export default function Footer() {
                 </ul>
             </div>
             <div>
-              <ul className="flex justify-between gap-3 align-middle items-center">
+              <ul className="socials flex justify-between gap-3 align-middle items-center">
                 <li className="text-[#D434FE]">Follow us</li>
                 <li>
                   <FaInstagram />
@@ -62,16 +62,16 @@ export default function Footer() {
           </div>
 
           <div className="useful mt-8">
-          <p className="text-[#D434FE]">Contact use</p>
+          <p className="text-[#D434FE]">Contact us</p>
           <div className="flex flex-col gap-6 ">
             <ul>
-              <li>
+              <li className="flex gap-2">
                 <span>
                   <FaPhone />
                 </span>
                 +234 6707653444
               </li>
-              <li>
+              <li className="flex gap-2">
                 <span>
                   <FaSearchLocation />
                 </span>

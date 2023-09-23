@@ -1,5 +1,5 @@
 .contact {
-    overflow: hidden;
+
     color: #fff;
 }
 
@@ -23,4 +23,13 @@
     font-weight: 400;
     size: 16px;
     line-height: 19.5px;
+}
+
+@media(max-width: 768px) {
+    .contact-info {
+        display: none;
+    }
+    .contact-txt {
+        display: none;
+    }
 }
