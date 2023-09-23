@@ -1,48 +1,44 @@
 .register-btn {
-    background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
-    border-radius: 4px;
-    padding: 10px 20px;
-    width: 100%;
-    height: 100%;
-    color: white;
+  background: linear-gradient(270deg, #903aff 0%, #fe34b9 100%);
+  border-radius: 4px;
+  padding: 10px 20px;
+  width: 100%;
+  height: 100%;
+  color: white;
 }
 
 .register-btn:hover {
-    background: transparent;
-    border: 2px solid #903AFF;
+  background: transparent;
+  border: 2px solid #903aff;
 }
 
-
-.logo-text  ul li {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    size: 16px;
-    line-height: 19.5px;
+.logo-text ul li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  size: 16px;
+  line-height: 19.5px;
 }
 
 .logo-text ul li:hover {
-    background-image: linear-gradient(270deg, #903AFF, #FE34B9);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+  background-image: linear-gradient(270deg, #903aff, #fe34b9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .active {
-    background-image: linear-gradient(270deg, #903AFF, #FE34B9);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+  background-image: linear-gradient(270deg, #903aff, #fe34b9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .menu-icon {
-    display: none;
+  display: none;
 }
 
-/* Your existing styles for .register-btn and other elements can remain as they are */
-
-/* Add these styles for the navbar */
 .navbar {
-  background-color: #333; /* Change this to your desired background color */
-  height: 80px; /* Adjust the height as needed */
+  background-color: transparent;
+  height: 80px;
   align-items: center;
 }
 
@@ -73,7 +69,6 @@
   }
 
   .menu {
-
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -86,40 +81,15 @@
     flex-direction: column;
     align-items: center;
   }
-}
 
-
-@media (max-width: 768px) {
-    .logo{
-        flex-direction: column;
-    }
-
-    /* .logo-text {
-      display: none;
-      flex-direction: column;
-      align-items: flex-start;
-      position: absolute;
-      top: 80px;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      transition: transform 0.3s ease-in-out;
-      transform: translateY(-100%);
-    }
-
-    .menu-open .logo-text {
-      transform: translateY(0);
-    }
-    */
-    .menu-icon {
-      display: block;
-    }
-
-    .logo-text {
-        flex-direction: column;
-
-    }
-
-
-
+  .logo {
+    flex-direction: column;
   }
+
+  .logo-text {
+    flex-direction: column;
+  }
+  .logo img {
+    display: none;
+  }
+}
