@@ -157,7 +157,7 @@ export default function RegisterForm() {
   return (
     <>
       <div className="container register-container w-[100%] text-white">
-        <h2 className="registerf py-6 text-[#D434FE] absolute  top-0">Register</h2>
+        <h2 className="registerf py-6 text-[#D434FE] absolute top-8">Register</h2>
         <p className="part">Be part of this movement</p>
         <p className="create pt-4">CREATE YOUR ACCOUNT</p>
         <div className="register-cont-try">

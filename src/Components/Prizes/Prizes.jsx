@@ -6,7 +6,7 @@ export default function Prizes() {
     <>
       <hr />
       <div className="prizes_and_awards flex flex-col text-white py-20 pr-10 relative">
-        <div className="float-right">
+        <div className="float-right mx-14">
           <h2 >
             Prizes and <br />
             <span className="text-[#D434FE]">Rewards</span>

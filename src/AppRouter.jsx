@@ -9,6 +9,9 @@ export default function AppRouter() {
     <BrowserRouter>
         <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route path="/timeline" element={<Home />} />
+            <Route path="/overview" element={<Home />} />
+            <Route path="/faq" element={<Home scrollTo="#faq" />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/register" element={<Register />} />
             <Route path="*" element={<h1>404</h1>} />

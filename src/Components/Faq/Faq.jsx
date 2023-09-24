@@ -52,7 +52,7 @@ export default function Faq() {
 
   return (
     <>
-    <div className="flex flex-col md:mt-10 md:flex-row  intro justify-center align-middle items-center">
+    <div className="flex flex-col md:mt-10 md:flex-row  intro justify-center align-middle items-center" id="faq">
       <div className="text-white">
         <h2 className="rules-text">
           Frequently Asked <span className="text-[#D434FE]">Questions</span>

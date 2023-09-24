@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import React, { useState } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -20,7 +21,7 @@ export default function Navbar() {
             <li><NavLink to="/" activeClassName="active-link">Home</NavLink></li>
             <li><NavLink to="/timeline" activeClassName="active-link">Timeline</NavLink></li>
             <li><NavLink to="/overview" activeClassName="active-link">Overview</NavLink></li>
-            <li><NavLink to="/faqs" activeClassName="active-link">FAQs</NavLink></li>
+            <li><NavLink to="/faq" activeClassName="active-link">FAQs</NavLink></li>
             <li><NavLink to="/contact" activeClassName="active-link">Contact</NavLink></li>
           </ul>
           <NavLink to="/register" activeStyle={{ color: 'white' }}>
