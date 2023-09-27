@@ -19,10 +19,10 @@ const componentVariants = {
     y: 20,
   },
   visible: {
-    opacity: 2,
+    opacity: 3,
     y: 0,
     transition: {
-      duration: 0.7,
+      duration: 1.5,
     },
   },
 };
